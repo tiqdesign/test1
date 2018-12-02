@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobilehw1.Hakkında"
+             Padding="5"
+             BackgroundColor="#D5EEFF">
+    <ContentPage.Title>HAKKINDA</ContentPage.Title>
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="GhostWhite" >
+            <StackLayout>
+                <Label TextColor="#008891" FontSize="Medium" FontAttributes="Bold" >Bölüm Hakkında</Label>
+                <Label TextColor="Black" FontSize="Small">
+                    Ülkemizde sanayinin ve teknolojinin gelişmesine bağlı olarak bilgisayar teknolojisi konusunda deneyimli ve nitelikli teknik personele gereksinim her geçen gün daha da artmaktadır. Anadolu Üniversitesi Bilgisayar Mühendisliği Bölümü, ülkemizin bu anlamda ihtiyacı olan güncel bilgi birikimine sahip bilgisayar mühendisleri yetiştirmek amacıyla 1993 yılında kurulmuş olup 2000-2001 öğretim yılında lisans düzeyinde eğitime başlamıştır. Bölümümüz, bu tarihten beri kaliteli eğitim anlayışından ödün vermeden, hem akademik kadrosunu hem de altyapısını bilgisayar teknolojilerindeki değişimlere ayak uyduracak şekilde geliştirmekte; bilgili, bilinçli, donanımlı ve etik değerlere önem veren Bilgisayar Mühendisleri yetiştirmektedir. Lisans programının yanında yüksek lisans ve doktora eğitimi de verilmektedir. Bölümde eğitim dili İngilizce’dir. Eğitim süresi, 1 yıllık İngilizce hazırlık sınıfı ve 4 yıllık lisans programı olmak üzere toplam 5 yıldır. Bölüm, Anadolu Üniversitesi İki Eylül kampüsünde yer almaktadır ve 5000 m2’lik bir alana sahiptir.
+                </Label>
+
+                <Label TextColor="#008891" FontSize="Medium" FontAttributes="Bold" >Misyon</Label>
+                <Label TextColor="Black" FontSize="Small">
+                    Özgörevimiz, çağdaş ve evrensel nitelikte bilgi üreten, bu bilgiyi toplumun faydası için kullanan, temel değerlerimizi benimsemiş, mesleklerinde lider konumda olan mühendisler yetiştirmektir.
+                </Label>
+
+                <Label TextColor="#008891" FontSize="Medium" FontAttributes="Bold" >Vizyon</Label>
+                <Label TextColor="Black" FontSize="Small">
+                    Vizyonumuz, mezunlarımızın ve öğretim elemanlarımızın geliştirdiği nitelikli projeler ve toplumsal katkılarıyla gerek yurtiçi gerekse yurtdışındaki Bilgisayar Mühendisliği Bölümleri arasında önde gelenlerden biri olmaktır.
+                </Label>
+
+                <Label TextColor="#008891" FontSize="Medium" FontAttributes="Bold" >Temel Değerler</Label>
+                <Label TextColor="Black" FontSize="Small" Text="Bilimsellik"/>
+                <Label TextColor="Black" FontSize="Small" Text="İnsan Odaklılık"/>
+                <Label TextColor="Black" FontSize="Small" Text="Yenilikçilik"/>
+                <Label TextColor="Black" FontSize="Small" Text="Mükemmeliyetçilik"/>
+                <Label TextColor="Black" FontSize="Small" Text="Kararlılık"/>
+                <Label TextColor="Black" FontSize="Small" Text="Duyarlılık"/>
+                <Label TextColor="Black" FontSize="Small" Text="İş Etiğine Bağlılık"/>
+                <Label TextColor="Black" FontSize="Small" Text="Yaşam Boyu Öğrenme Bilinci"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

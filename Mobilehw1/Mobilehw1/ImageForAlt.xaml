@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobilehw1.ImageForAlt">
+    <ContentPage.Title>ALTYAPI DETAYI</ContentPage.Title>
+    <ContentPage.Content>
+        <StackLayout>
+            <Image  x:Name="img_Model" WidthRequest="300" HeightRequest="220"  HorizontalOptions="Center"></Image>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

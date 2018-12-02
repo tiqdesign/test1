@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobilehw1.Dersler"
+             Padding="5"
+             BackgroundColor="#D5EEFF">
+    <ContentPage.Title >DERSLER</ContentPage.Title>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="GhostWhite">
+                <Label TextColor="#008891" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center" Text="Bu Dönem Yürütülen Lisans ve Lisansüstü Ders Bilgileri "/>
+                <Label TextColor="Black" FontSize="Small" Text="BIL519 - İleri Algoritma Analizi"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIL551 - İleri Veri Tabanı Yönetim Sistemleri"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIL567 - Öneri Sistemlerine Giriş"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM101 - Bilgisayar Programlama I"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM203 - Mantık Tasarımı"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM207 - Bilgisayar Programlama III"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM209 - Yazılım Tasarlama ve Geliştirme Prensipleri"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM213 - Veri Yapıları ve Algoritmalar"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM302 - Bilgisayar Ağları"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM303 - Mikrobilgisayarlar"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM305 - Bilgisayar Organizasyonu"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM306 - İşletim Sistemleri"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM308 - Web Sunucu Programlama"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM309 - Yapay Us"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM313 - İleri Programlama Teknikleri"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM314 - Hesaplama Kuramı"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM405 - Proje Yönetimi"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM423 - Yazılım Mühendisliği"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM437 - Bilgisayar Mühendisliği Tasarımları"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM439 - Veritabanı Yönetim Sistemleri Uygulamaları"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM451 - MVC ile Web Sunucu Programlama"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM466 - Bulanık Mantık"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM478 - Yönetim Bilişim Sistemleri"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM485 - Bilgisayar Bilimlerinde Araştırma I - L (Alper Bilge)"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM488 - Örüntü Tanımaya Giriş"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM490 - Bilgi Erişim Sistemleri"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM492 - Tasarım Örüntüleri"/>
+                <Label TextColor="Black" FontSize="Small" Text="BIM493 - Mobil Programlama I"/>
+                <Label TextColor="Black" FontSize="Small" Text="İST252 - Olasılık ve İstatistik"/>
+                <Label TextColor="Black" FontSize="Small" Text="MAT249 - Lineer Cebir ve Diferansiyel Denklemler"/>
+                <Label TextColor="Black" FontSize="Small" Text="MAT806 - Matematik II"/>
+                <Label TextColor="#008891" FontSize="Medium" FontAttributes="Bold" Text="Ders Etiği"/>
+                <Label TextColor="Black" FontSize="Small" Text="Akademik Dürüstlük Bildirisi"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

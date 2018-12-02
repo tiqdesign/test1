@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mobilehw1="clr-namespace:Mobilehw1;assembly=Mobilehw1"
+             x:Class="Mobilehw1.Altyapi"
+             Padding="5"
+             BackgroundColor="#D5EEFF">
+    <ContentPage.Title>ALTYAPI</ContentPage.Title>
+    <ContentPage.BindingContext>
+        <mobilehw1:Model2></mobilehw1:Model2>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+
+            <ListView
+                     HasUnevenRows="true" ItemsSource="{Binding Esyalar}" BackgroundColor="GhostWhite" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="GhostWhite"
+                                         Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image x:Name="img_src" Source="{Binding fotoUrl}" WidthRequest="100" HeightRequest="66" >
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="ItemsListView_OnItemTapped"  NumberOfTapsRequired="2"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                    <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding esyaAdi}"
+                                           TextColor="Black" />
+                                    <Label Text="{Binding aciklama}"
+                                           HorizontalOptions="EndAndExpand"
+                                           TextColor="Gray" />
+                                </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

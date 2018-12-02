@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobilehw1.HomePage"
+             >
+    <ContentPage.Title> GİRİŞ YAP </ContentPage.Title>
+    <ContentPage.Content>
+
+        <StackLayout>
+            <Entry x:Name="ent_user" Placeholder="Email Adresiniz" Margin="10" HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="ent_pass" Placeholder="Şifreniz" IsPassword="True" Margin="10" HorizontalOptions="FillAndExpand"></Entry>
+            <StackLayout HorizontalOptions="FillAndExpand" Padding="10">
+                <Button x:Name="btn_log" Text="GİRİŞ YAP"  HorizontalOptions="Fill" TextColor="#0F3057" BorderColor="#0F3057"  BorderWidth="2" CornerRadius="20" Clicked="btn_Login"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" Padding="10" Orientation="Horizontal">
+                <Button x:Name="btn_new" Text="KAYIT OL" HorizontalOptions="FillAndExpand" Clicked="btn_NavigateNew" BorderWidth="2" BorderColor="#0F3057" BackgroundColor="#0F3057" CornerRadius="20" TextColor="#FFFFFF" ></Button>
+                <Button x:Name="btn_forget" Text="ŞİFREMİ UNUTTUM?" HorizontalOptions="FillAndExpand" BackgroundColor="#0F3057" BorderWidth="2" BorderColor="#FFFFFF" CornerRadius="20" TextColor="#FFFFFF"></Button>
+            </StackLayout>
+        </StackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>

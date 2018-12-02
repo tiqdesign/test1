@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobilehw1.SignUp">
+    <ContentPage.Title> KAYIT OL </ContentPage.Title>
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="ent_mail" Placeholder="Email adresinizi giriniz..."  VerticalOptions="Center"></Entry>
+            <Entry x:Name="ent_password" Placeholder="Şifrenizi giriniz..." VerticalOptions="Center"></Entry>
+            <Entry x:Name="ent_password2" Placeholder="Şifrenizi tekrar giriniz..." VerticalOptions="Center"></Entry>
+            <Button x:Name="btn_save" Text="Kayıt Ol" VerticalOptions="Center" Clicked="Btn_save_OnClicked"></Button>
+            <Label x:Name="lb_info" VerticalOptions="Center"  ></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

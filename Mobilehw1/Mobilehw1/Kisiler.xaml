@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobilehw1.Kisiler"
+             Padding="5"
+             BackgroundColor="#D5EEFF">
+    <ContentPage.Title> KİŞİLER </ContentPage.Title>
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <Grid RowSpacing="5" ColumnSpacing="5" Padding="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0" BackgroundColor="GhostWhite">
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/aarslan2.jpg"  WidthRequest="96" HeightRequest="120"></Image>
+                        <StackLayout Orientation="Vertical">
+                            <Label x:Name="lb_name1" Text="Dr.Öğr. Üyesi Ahmet ARSLAN" FontSize="Small" VerticalOptions="Center" Margin="5" TextColor="#008891"/>
+                            <Label Text="aarslan2@anadolu.edu.tr " FontSize="10"></Label>
+                            <Label x:Name="lb_tel1" FontSize="10"  Text="111111" BindingContext="{x:Reference Name=lb_name1}"></Label>
+                            <Button  Text="Call" FontSize="10" FontAttributes="Bold" BorderRadius="10" BorderWidth="2" BorderColor="#008891" Clicked="Button_OnClicked" BindingContext="{x:Reference Name=lb_tel1}"></Button>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="1" BackgroundColor="GhostWhite">
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/yhoscan.jpg"  WidthRequest="96" HeightRequest="120" ></Image>
+                        <StackLayout Orientation="Vertical">
+                            <Label x:Name="lb_name2" Text="Prof.Dr. Yaşar HOŞCAN" FontSize="Small" VerticalOptions="Center" FontAttributes="Bold" Margin="5" TextColor="#008891"/>
+                            <Label Text="hoscan@anadolu.edu.tr " FontSize="10"></Label>
+                            <Label x:Name="lb_tel2" Text="222222" BindingContext="{x:Reference Name=lb_name2}"></Label>
+                            <Button  Text="Call" BorderRadius="10" BorderWidth="2" BorderColor="#008891" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_OnClicked" BindingContext="{x:Reference Name=lb_tel2}" ></Button>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="0" BackgroundColor="GhostWhite">
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/serkangunal.jpg"  WidthRequest="96" HeightRequest="120"></Image>
+                        <StackLayout Orientation="Vertical">
+                            <Label x:Name="lb_name3" Text="Doç.Dr. Serkan GÜNAL" FontSize="Small" VerticalOptions="Center" FontAttributes="Bold" Margin="5" TextColor="#008891"/>
+                            <Label Text="serkangunal@anadolu.edu.tr " FontSize="10"></Label>
+                            <Label x:Name="lb_tel3" Text="333333" BindingContext="{x:Reference Name=lb_name3}"></Label>
+                            <Button Text="Call" BorderRadius="10" BorderWidth="2" BorderColor="#008891" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_OnClicked" BindingContext="{x:Reference Name=lb_tel3}"></Button>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="1" BackgroundColor="GhostWhite">
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/ckaleli.jpg"  WidthRequest="96" HeightRequest="120" ></Image>
+                        <StackLayout Orientation="Vertical">
+                            <Label x:Name="lb_name4" Text="Doç.Dr. Cihan KALELİ" FontSize="Small" VerticalOptions="Center" FontAttributes="Bold"  Margin="5" TextColor="#008891"/>
+                            <Label Text="ckaleli@anadolu.edu.tr" FontSize="10"></Label>
+                            <Label x:Name="lb_tel4" Text="444444" BindingContext="{x:Reference Name=lb_name4}"></Label>
+                            <Button Text="Call" BorderRadius="10" BorderWidth="2" BorderColor="#008891" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_OnClicked" BindingContext="{x:Reference Name=lb_tel3}" ></Button>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.Column="0" BackgroundColor="GhostWhite">
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/akuysal.jpg"  WidthRequest="96" HeightRequest="120" ></Image>
+                        <StackLayout Orientation="Vertical">
+                            <Label x:Name="lb_name5" Text="Dr.Öğr. Üyesi Alper Kürşat UYSAL" FontSize="Small" VerticalOptions="Center" FontAttributes="Bold" Margin="5" TextColor="#008891"/>
+                            <Label Text="akuysal@anadolu.edu.tr " FontSize="10"></Label>
+                            <Label x:Name="lb_tel5" Text="555555" BindingContext="{x:Reference Name=lb_name5}"></Label>
+                            <Button Text="Call" BorderRadius="10" BorderWidth="2" BorderColor="#008891" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_OnClicked" BindingContext="{x:Reference lb_tel5}"></Button>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.Column="1" BackgroundColor="GhostWhite">
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/abilge.png"   WidthRequest="96" HeightRequest="120"></Image>
+                        <StackLayout Orientation="Vertical">
+                            <Label x:Name="lb_name6" Text="Dr.Öğr. Üyesi Alper BİLGE" FontSize="Small" VerticalOptions="Center" FontAttributes="Bold" Margin="5" TextColor="#008891"/>
+                            <Label Text="abilge@anadolu.edu.tr " FontSize="10"></Label>
+                            <Label x:Name="lb_tel6" Text="666666" BindingContext="{x:Reference Name=lb_name6}"></Label>
+                            <Button Text="Call" BorderRadius="10" BorderWidth="2" BorderColor="#008891" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_OnClicked" BindingContext="{x:Reference lb_tel6}"></Button>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Grid.Row="3" Grid.Column="0" BackgroundColor="GhostWhite">
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/sevcany.jpg"  WidthRequest="96" HeightRequest="120"></Image>
+                        <StackLayout Orientation="Vertical">
+                            <Label x:Name="lb_name7" Text="Dr.Öğr. Üyesi Sevcan YILMAZ GÜNDÜZ" FontAttributes="Bold" VerticalOptions="Center" FontSize="Small" Margin="5" TextColor="#008891"/>
+                            <Label Text="sevcany@anadolu.edu.tr " FontSize="10"></Label>
+                            <Label x:Name="lb_tel7" Text="777777" BindingContext="{x:Reference Name=lb_name7}"></Label>
+                            <Button Text="Call" BorderRadius="10" BorderWidth="2" BorderColor="#008891" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_OnClicked" BindingContext="{x:Reference lb_tel7}"></Button>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Grid.Row="3" Grid.Column="1" BackgroundColor="GhostWhite">
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/byurekli.jpg"   WidthRequest="96" HeightRequest="120"></Image>
+                        <StackLayout Orientation="Vertical">
+                            <Label x:Name="lb_name8" Text="Araş.Gör.Dr. Burcu YÜREKLİ YILMAZEL" FontSize="Small"  VerticalOptions="Center"  FontAttributes="Bold" Margin="5" TextColor="#008891"/>
+                            <Label Text="byurekli@anadolu.edu.tr " FontSize="10"></Label>
+                            <Label x:Name="lb_tel8" Text="8888888" BindingContext="{x:Reference Name=lb_name8}"></Label>
+                            <Button Text="Call" BorderRadius="10" BorderWidth="2" BorderColor="#008891" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_OnClicked" BindingContext="{x:Reference lb_tel8}" ></Button>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Grid.Row="4" Grid.Column="0" BackgroundColor="GhostWhite">
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/oozsen.jpg"   WidthRequest="96" HeightRequest="120" ></Image>
+                        <StackLayout Orientation="Vertical">
+                            <Label x:Name="lb_name9" Text="Öğr.Gör. Özgür ÖZŞEN" FontSize="Small" VerticalOptions="Center" FontAttributes="Bold" Margin="5" TextColor="#008891"/>
+                            <Label Text="oozsen@anadolu.edu.tr " FontSize="10"></Label>
+                            <Label x:Name="lb_tel9" Text="999999" BindingContext="{x:Reference Name=lb_name9}"></Label>
+                            <Button Text="Call" BorderRadius="10" BorderWidth="2" BorderColor="#008891" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_OnClicked" BindingContext="{x:Reference lb_tel9}"></Button>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Grid.Row="4" Grid.Column="1" BackgroundColor="GhostWhite">
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/ekacmaz.jpg"   WidthRequest="96" HeightRequest="120"></Image>
+                        <StackLayout Orientation="Vertical">
+                            <Label x:Name="lb_name10" Text="Öğr.Gör. Emre KAÇMAZ" FontSize="Small" VerticalOptions="Center" FontAttributes="Bold" Margin="5" TextColor="#008891"/>
+                            <Label Text="emrekacmaz@anadolu.edu.tr " FontSize="10"></Label>
+                            <Label x:Name="lb_tel10" Text="101010" BindingContext="{x:Reference Name=lb_name10}"></Label>
+                            <Button Text="Call" BorderRadius="10" BorderWidth="2" BorderColor="#008891" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_OnClicked" BindingContext="{x:Reference lb_tel10}"></Button>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Grid.Row="5" Grid.Column="0" BackgroundColor="GhostWhite">
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/roaltug.jpeg"   WidthRequest="96" HeightRequest="120"></Image>
+                        <StackLayout>
+                            <Label x:Name="lb_name11" Text="Öğr.Gör. Reha Oğuz ALTUĞ" FontSize="Small" VerticalOptions="Center" FontAttributes="Bold" Margin="5" TextColor="#008891"/>
+                            <Label Text="roaltug@anadolu.edu.tr " FontSize="10"></Label>
+                            <Label x:Name="lb_tel11" Text="010101" BindingContext="{x:Reference Name=lb_name11}"></Label>
+                            <Button Text="Call" BorderRadius="10" BorderWidth="2" BorderColor="#008891" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_OnClicked" BindingContext="{x:Reference lb_tel11}"></Button>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Grid.Row="5" Grid.Column="1" BackgroundColor="GhostWhite">
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/ayargic.jpg"   WidthRequest="96" HeightRequest="120"></Image>
+                        <StackLayout Orientation="Vertical">
+                            <Label x:Name="lb_name12" Text="Araş.Gör. Alper YARGIÇ" FontSize="Small" VerticalOptions="Center" FontAttributes="Bold" Margin="5" TextColor="#008891"/>
+                            <Label Text="ayargic@anadolu.edu.tr " FontSize="10"></Label>
+                            <Label x:Name="lb_tel12" Text="121212" BindingContext="{x:Reference Name=lb_name12}"></Label>
+                            <Button Text="Call" BorderRadius="10" BorderWidth="2" BorderColor="#008891" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_OnClicked" BindingContext="{x:Reference lb_tel12}"></Button>
+                        </StackLayout>
+                    </StackLayout>
+
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

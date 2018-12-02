@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Mobilehw1"
+             x:Class="Mobilehw1.MainPage" BarBackgroundColor="#0F3057" BarTextColor="GhostWhite" CurrentPageChanged="MainPage_OnCurrentPageChanged">
+
+    <local:Hakkında Title="HAKKINDA" />
+
+    <local:Kisiler Title="KİŞİLER" />
+
+    <local:Altyapi Title="ALTYAPI" />
+
+    <local:Dersler Title="DERSLER" />
+
+</TabbedPage>
